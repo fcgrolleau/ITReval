@@ -25,7 +25,7 @@ This package is written and maintained by François Grolleau (francois.grolleau@
 >  An example is given at the end of the file. Parallel processing is made compatible on Windows and Mac OS / Linux.
 > 
 >  `simulations.R` reproduce the simulations given in the paper
-
+>
 >  `plot_results.R` plots the results of the simulations and reproduce Figure 4 from the paper
 
 ### References
