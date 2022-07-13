@@ -10,23 +10,23 @@ This package is written and maintained by François Grolleau (francois.grolleau@
 
 ### Reproducibility
 
-The **new_itr_situation** folder contains the following files.
+- The **new_itr_situation** folder contains the following files.
 
- `figure_2.R` implements the toy example given in the paper and repoduces Figure 2
- 
- `boot_func_new_itr.R` contains the bootstrap functions used for the new ITR situation application
- 
- `mimic_new_itr.R` reproduces Figure 5 for the new ITR situation application
+ >`figure_2.R` implements the toy example given in the paper and repoduces Figure 2
+ >
+ >`boot_func_new_itr.R` contains the bootstrap functions used for the new ITR situation application
+ >
+ >`mimic_new_itr.R` reproduces Figure 5 for the new ITR situation application
 
 - The **partially_implemented_itr_situation** folder contains the following files.
 
-`algo1.R` implment the EM algorithm from the paper and returns ARE, AIE and MIG estimates 
- ARE, AIE and MIG estimates along their bootstrap standard errors can be obtained in one line of code. 
- An example is given at the end of the file.
-
-`simulations.R` reproduce the simulations given in the paper
-
-`plot_results.R` plots the results of the simulations and reproduce Figure 4 from the paper
+>`algo1.R` implment the EM algorithm from the paper and returns ARE, AIE and MIG estimates 
+>ARE, AIE and MIG estimates along their bootstrap standard errors can be obtained in one line of code. 
+>An example is given at the end of the file.
+>
+>`simulations.R` reproduce the simulations given in the paper
+>
+>`plot_results.R` plots the results of the simulations and reproduce Figure 4 from the paper
 
 ### References
 François Grolleau, François Petit and Raphaël Porcher.
