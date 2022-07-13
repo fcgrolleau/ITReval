@@ -7,7 +7,7 @@ source("boot_func_new_itr.R")
 set.seed(324)
 
 # Load data
-mimic_si <-read.csv("/Users/francois/Desktop/github repos/ITR-evaluation/ITR-evaluation/mimic_si_preds.csv")
+mimic_si <-read.csv("mimic_si_preds.csv")
 
 # Fit propensity score model
 ps_mod <- glm(a1 ~ admission_age + weight + bun_k1 + ph_k1 + pot_k1 + SOFA_24hours + immunosuppressant, 
