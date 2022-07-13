@@ -16,7 +16,7 @@ ps_mod <- glm(a1 ~ admission_age + weight + bun_k1 + ph_k1 + pot_k1 + SOFA_24hou
 # Get propensity score predictions
 mimic_si$ps_hat <-  ps_mod$fitted.values
 
-resamples <- 10 # Bootstrap resamples
+resamples <- 999 # Bootstrap resamples
 
 # cognitive bias scenario
 Lambda_cb <- c()
@@ -58,6 +58,9 @@ for (i in Alpha_seq_cl ) {
 }     
 boot_ci_cl <- sapply(boot_ci_cl, c)
 
+
+##### Make Figure 5 from original paper
+
 ci_width <- 0.004
 diamond_size <- 2
 lab_size <- 2
@@ -65,7 +68,6 @@ xlab_pos <- 3.7
 ylab_pos <- 3.4
 wl <- 8
 
-##### Make Figure 5 from original paper
 dev.new(width=wl, height=wl/2, pointsize=7, noRStudioGD = TRUE)
 par(mfcol=c(1,2), mar = c(5.5, 6.2, 2, 2))
 plot(NULL, xlim=c(0,1), ylim=round(c(min(c(boot_ci_cl, boot_ci_cb)), max(c(boot_ci_cl, boot_ci_cb))), 3), bty="n", las=1,
@@ -78,7 +80,10 @@ title(xlab=TeX('$\\alpha$'), line=xlab_pos, cex.lab=lab_size)
 title(ylab=TeX('$\\widehat{\\Lambda}_{ITE}(r,\\rho^{*}_{"•",\\alpha})$'), line=ylab_pos, cex.lab=lab_size)
 
 plotCI(Alpha_seq_cl+.01, Lambda_cl, ui=boot_ci_cl[2,], li=boot_ci_cl[1,], pch=15, gap=0, cex=diamond_size, sfrac=ci_width, col="#df8f44ff", barcol="black", add=TRUE)
+
 plotCI(Alpha_seq_cb-.02, Lambda_cb, ui=boot_ci_cb[2,], li=boot_ci_cb[1,], pch=16, gap=0, cex=diamond_size, sfrac=ci_width, col="#00a1d5ff", barcol="black", add=TRUE)
+points(Alpha_seq_cb-.02, Lambda_cb, pch=21, cex=diamond_size, col="white")
+
 
 legend(.027, -0.024, legend=c(TeX('$\\rho^{*}_{cb,\\alpha}$'), TeX('$\\rho^{*}_{cl,\\alpha}$')),
        col=c("#00a1d5ff", "#df8f44ff"), pch=c(16,15), cex=1.5, pt.cex = 1.5, horiz = TRUE)
@@ -91,5 +96,6 @@ abline(h = 0, lty=1, lwd = 2)
 
 title(xlab="Proportion of patients implementing the new ITR", line=xlab_pos, cex.lab=lab_size*.75)
 plotCI(mean_imp_cl-.01, Lambda_cl, ui=boot_ci_cl[2,], li=boot_ci_cl[1,], pch=15, gap=0, cex=diamond_size, sfrac=ci_width, col="#df8f44ff", barcol="black", add=TRUE)
-plotCI(mean_imp_cb+.02, Lambda_cb, ui=boot_ci_cb[2,], li=boot_ci_cb[1,], pch=16, gap=0, cex=diamond_size, sfrac=ci_width, col="#00a1d5ff", barcol="black", add=TRUE)
 
+plotCI(mean_imp_cb+.02, Lambda_cb, ui=boot_ci_cb[2,], li=boot_ci_cb[1,], pch=21, gap=0, cex=diamond_size, sfrac=ci_width, col="white", bg="#00a1d5ff", barcol="black", add=TRUE)
+points(mean_imp_cb+.02, Lambda_cb, pch=21, cex=diamond_size, col="white", bg="#00a1d5ff", lwd=0.5)
