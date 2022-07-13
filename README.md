@@ -20,7 +20,7 @@ The **new_itr_situation** folder contains the following files.
 
 - The **partially_implemented_itr_situation** folder contains the following files.
 
-`algo1.R` implment the EM algorithm from the paper and returns ARE, AIE and MIG estimates. 
+`algo1.R` implement the EM algorithm from the paper and returns ARE, AIE and MIG estimates. 
  ARE, AIE and MIG estimates along their bootstrap standard errors can be obtained in one line of code. 
  An example is given at the end of the file. Parallel processing is made compatible on Windows and Mac OS / Linux.
 
