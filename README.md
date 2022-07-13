@@ -1,7 +1,7 @@
 # ARE, AIE and MIG estimators for ITR evaluation from observation data
 
 
-This repository contains the code that reproduces results from the paper *A Comprehensive Framework for the Evaluation of Individual Treatment Rules From Observational Data*.
+This repository reproduces results from the paper *A Comprehensive Framework for the Evaluation of Individual Treatment Rules From Observational Data*.
 The code implements the average rule effect (ARE), average implementation effect (AIE) and maximal implementation gain (MIG) 
 estimators as proposed by Grolleau, Petit and Porcher (2022). 
 
