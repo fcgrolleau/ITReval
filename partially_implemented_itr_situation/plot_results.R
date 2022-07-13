@@ -2,7 +2,6 @@ library(reshape2)
 library(ggplot2)
 library(hrbrthemes)
 
-setwd("/Users/francois/Desktop/github repos/ITR-evaluation/ITR-evaluation/modfied hme/perhaps_maybe/simuls/results_04_22_FP")
 load("end_third_scenario_04_25.RData")
 
 simul_to_results <- function(
