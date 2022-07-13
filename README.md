@@ -10,7 +10,7 @@ This package is written and maintained by François Grolleau (francois.grolleau@
 
 ### Reproducibility:
 
-The **new_itr_situation folder** contains the following files.
+The **new_itr_situation** folder contains the following files.
 
  `figure_2.R` implements the toy example given in the paper and repoduces Figure 2
  
