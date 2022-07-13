@@ -3,7 +3,7 @@ source("algo1.R")
 set.seed(4321)
 
 # Load data
-mimic_si <- read.csv("~/Desktop/github repos/Emulated-ITR/Python/data/mimic_si_preds.csv")
+mimic_si <- read.csv("mimic_si_preds.csv")
 
 # Create r(X)
 mimic_si$r_old <- as.numeric(mimic_si$SOFA_24hours >11 )
