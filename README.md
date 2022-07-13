@@ -8,7 +8,7 @@ estimators as proposed by Grolleau, Petit and Porcher (2022).
 ### Authors
 This package is written and maintained by François Grolleau (francois.grolleau@aphp.fr).
 
-### Reproducibility:
+### Reproducibility
 
 The **new_itr_situation** folder contains the following files.
 
@@ -32,4 +32,4 @@ The **new_itr_situation** folder contains the following files.
 François Grolleau, François Petit and Raphaël Porcher.
 <b>A Comprehensive Framework for the Evaluation of Individual Treatment Rules From Observational Data.</b>
 2022.
-[<a href="https://arxiv.org/abs/">arxiv</a>]
+[<a href="https://arxiv.org/">arxiv</a>]
