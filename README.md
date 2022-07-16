@@ -20,7 +20,7 @@ This package is written and maintained by François Grolleau (francois.grolleau@
 
 - The **partially_implemented_itr_situation** folder contains the following files.
 
->`algo1.R` implment the EM algorithm from the paper and returns ARE, AIE and MIG estimates. 
+>`algo1.R` implements the EM algorithm from the paper and returns ARE, AIE and MIG estimates. 
 >ARE, AIE and MIG estimates along their bootstrap standard errors can be obtained in one line of code. 
 >An example is given at the end of the file.
 >
@@ -32,4 +32,4 @@ This package is written and maintained by François Grolleau (francois.grolleau@
 François Grolleau, François Petit and Raphaël Porcher.
 <b>A Comprehensive Framework for the Evaluation of Individual Treatment Rules From Observational Data.</b>
 2022.
-[<a href="https://arxiv.org/">arxiv</a>]
+[<a href="https://arxiv.org/abs/2207.06275">arxiv</a>]
