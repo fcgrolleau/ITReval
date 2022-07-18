@@ -26,7 +26,7 @@ This package is written and maintained by François Grolleau (francois.grolleau@
 >
 >`simulations.R` reproduces the simulations given in the paper.
 >
->`plot_results.R` plots the results of the simulations and reproduce Figure 4 from the paper.
+>`plot_results.R` plots the results of the simulations and reproduces Figure 4 from the paper.
 
 ### References
 François Grolleau, François Petit and Raphaël Porcher.
