@@ -24,7 +24,7 @@ This package is written and maintained by François Grolleau (francois.grolleau@
 >ARE, AIE and MIG estimates along their bootstrap standard errors can be obtained in one line of code. 
 >An example is given at the end of the file.
 >
->`simulations.R` reproduce the simulations given in the paper.
+>`simulations.R` reproduces the simulations given in the paper.
 >
 >`plot_results.R` plots the results of the simulations and reproduce Figure 4 from the paper.
 
