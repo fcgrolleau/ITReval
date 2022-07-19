@@ -2,11 +2,7 @@
 
 
 This repository reproduces results from the paper *A Comprehensive Framework for the Evaluation of Individual Treatment Rules From Observational Data*.
-The code implements the average rule effect (ARE), average implementation effect (AIE) and maximal implementation gain (MIG) 
-estimators as proposed by Grolleau, Petit and Porcher (2022). 
-
-### Authors
-This package is written and maintained by François Grolleau (francois.grolleau@aphp.fr).
+The code implements the average rule effect (ARE), average implementation effect (AIE) and maximal implementation gain (MIG) estimators as proposed in the original paper.
 
 ### Reproducibility
 
@@ -28,8 +24,3 @@ This package is written and maintained by François Grolleau (francois.grolleau@
 >
 >`plot_results.R` plots the results of the simulations and reproduces Figure 4 from the paper.
 
-### References
-François Grolleau, François Petit and Raphaël Porcher.
-<b>A Comprehensive Framework for the Evaluation of Individual Treatment Rules From Observational Data.</b>
-2022.
-[<a href="https://arxiv.org/abs/2207.06275">arxiv</a>]
