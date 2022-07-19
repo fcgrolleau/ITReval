@@ -23,4 +23,3 @@ The code implements the average rule effect (ARE), average implementation effect
 >`simulations.R` reproduces the simulations given in the paper.
 >
 >`plot_results.R` plots the results of the simulations and reproduces Figure 4 from the paper.
-
